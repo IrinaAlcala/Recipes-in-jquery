@@ -1,4 +1,25 @@
-var recipes = [];
+var recipes = [
+{
+   name: "Chicken Biryani",
+   description: "some text"
+},
+{
+    name: "Vegetable pilaf",
+    description: "some text"
+},
+{
+    name: "Veg burger",
+    description: "some text"
+},
+{
+    name: "Pizza",
+    description: "some text"
+},
+{
+    name: "Noodles",
+    description: 'some text'
+},
+];
 
 filters = {
     searchText: ''
