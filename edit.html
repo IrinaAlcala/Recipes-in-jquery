@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Edit Recipe</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <div class="header">
+                <div class="container">
+                    <h1>recipe App</h1>
+                    <p>Add recipes </p>
+                </div>
+            </div>
+            
+            <div class="edit-actions">
+                <div class="container">
+                    <a href="/index.html">Home</a>
+                </div>
+            </div>
+            
+            <div class="main-content">
+                <div class="container">
+                    <h2>Add recipe</h2>
+                    <div class="form-group">
+                        <input type="text" placeholder="recipe Name" id="recipe-name" class="form-control"/>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea placeholder="Description" id="recipe-steps" class="form-control"></textarea>
+                    </div>
+                    
+                    <h2>Ingredients</h2>
+                    <div class="ingredients"></div>
+                
+                    <div class="row">
+                        <div class="col-sm-3 col-7">
+                            <input type="text" id="add-ingredient" placeholder="Add Ingredient" class="form-control"/>
+                        </div>
+                        <div class="col-sm-3 col-5">
+                            <button id="btn-ingredient" class="btn btn-primary">Add Ingredient</button>
+                        </div>
+                    </div>
+        
+                    <br/>
+                    <button onclick="window.location.href='/index.html'" class="btn btn-primary">Save recipe</button>
+                    <button id="delete-recipe" class="btn btn-danger">Delete recipe</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-10">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="scripts/jquery.js"></script>
+        <script src="scripts/bootstrap.min.js"></script>
+        <script src="scripts/uuidv4.js"></script>
+        <script src="scripts/recipe-app.js"></script>
+        <script src="scripts/recipe-edit.js"></script>    
+    </div>
+</body>
+</html>
